@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+.rounded-corner {
+    border-radius: 30px;
+    background-color: #f2f3f8;
+    border: none;
+}
+
+.rounded-corner-btn {
+    border-radius: 30px;
+    background-color: #ed1c94;
+    border: 1px solid #ed1c94;
+}
+
+.border {
+    border: none !important;
+    border-bottom: 1px solid rgb(0, 0, 0) !important;
+}
+
+.loc {
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+}

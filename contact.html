@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="style/animate.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="script/jquery.js"></script>
+    <script src="script/popper.js"></script>
+    <script src="script/bootstrap.js"></script>
+</head>
+<body>
+    <!-- Nav Bar Coding -->
+    <nav class="navbar navbar-expand-md px-3 my-bg">
+        <a href="#" class="navbar-brand">BS PROJECT</a>
+        <i class="fa fa-bars bars-icon navbar-toggler" id="nav-icon"></i>
+        <div class="collapse navbar-collapse slider" style="transition: 0.5s;" id="mobile-menu"> 
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item me-5"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item me-5 dropdown"><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About us</a>
+                    <div class="dropdown-menu">
+                        <a href="about.html" class="dropdown-item text-dark">About Us</a>
+                    </div>
+                </li>
+                <li class="nav-item me-5"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-search" id="search-icon"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Nav Bar Coding -->
+
+    <!-- Contact Coding -->
+    <div class="container-fluid">
+        <div class="container-md">
+            <div class="row">
+                <div class="col-md-8 mb-md-5 mb-2">
+                    <div class="container-md p-lg-5 p-2 py-5">
+                        <h2 class="colorful-border mb-4">CONTACT US</h2>
+
+                        <p style="color: rgba(0, 0, 0, 0.616);">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Eius, cumque? Ab cumque corrupti perferendis repudiandae 
+                            nostrum, delectus ducimus consequatur ad nulla asperiores? 
+                            Quo doloribus perferendis.
+                        </p>
+
+                        <form>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="first" class="ms-3 mb-2">
+                                        Firstname
+                                    </label>
+                                    <input type="text" class="form-control rounded-corner mb-4 py-lg-3 p-2" id="first">
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <label for="last" class="ms-3 mb-2">
+                                        Lastname
+                                    </label>
+                                    <input type="text" class="form-control rounded-corner mb-4 py-lg-3 p-2" id="last">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="email" class="ms-3 mb-2">
+                                        Email
+                                    </label>
+                                    <input type="email" class="form-control rounded-corner mb-4 py-lg-3 p-2" id="email">
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <label for="phone" class="ms-3 mb-2">
+                                        Phone
+                                    </label>
+                                    <input type="number" class="form-control rounded-corner mb-4 py-lg-3 p-2" id="phone">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label for="message" class="ms-3 mb-2">
+                                        Message
+                                    </label>
+
+                                    <textarea class="form-control rounded-corner mb-4 py-lg-3 p-2" id="message"></textarea>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary py-lg-3 p-2 px-sm-5 px-3 rounded-corner-btn">SEND MESSAGE</button>
+                        </form>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 p-sm-5 p-3 py-5">
+                    <h6>ADDRESS</h6>
+                    <hr class="border">
+                    <div class="d-flex mb-5">
+                        <i style="color: #921de7;" class="fa fa-map-marker me-2"></i>
+                        <small style="text-indent: 0; line-height: 18px;">2130 Fulton Street, Chicago, IL <br class="d-none d-sm-block">
+                            94117-1080 USA
+                        </small>
+                    </div>
+
+                    <h6>
+                        PHONE
+                    </h6>
+                    <hr class="border">
+                    <div class="d-flex mb-5">
+                        <i style="color: #921de7;" class="fa fa-phone me-2"></i>
+                        <small style="text-indent: 0; line-height: 18px;"> 1-800-6543-765, 1-800-3434-876
+                        </small>
+                    </div>
+
+                    <h6>
+                        EMAIL
+                    </h6>
+                    <hr class="border">
+                    <div class="d-flex mb-5">
+                        <i style="color: #921de7;" class="fa fa-envelope-open me-2"></i>
+                        <small style="text-indent: 0; line-height: 18px;"> dns@2002
+                        </small>
+                    </div>
+
+                    <h6>
+                        OPENING HOURS
+                    </h6>
+                    <hr class="border">
+                    <div class="d-flex mb-5">
+                        <i style="color: #921de7;" class="fa fa-calendar me-2"></i>
+                        <small style="text-indent: 0; line-height: 19px;">Mon-Fri: 9:00 am-6:00 pm <br class="d-none d-sm-block">
+                            Sat-Sun: 11:00 am-4:00 pm 
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- End Contact Coding -->
+
+    <!-- Footer Coding -->
+    <div class="my-bg p-5">
+        <div class="row">
+            <div class="col-md-4 text-white">
+                <h2 class="mb-3 text-white">GET IN TOUCH</h2>
+
+                <div class="input-group mb-5">
+                    <input type="email" placeholder="Email Id" name="email" class="form-control">
+
+                    <button class="btn btn-warning text-white">SUBSCRIBE</button>
+                </div>
+
+                <h2><i class="fa fa-map-marker"></i> ADDRESS</h2>
+
+                <address class="mb-5">
+                    <span>JAIPUR, RAJASTHAN, INDIA 
+                        <br>
+                        CALL : +91 7088923613, +91 7546236578
+                        <br>
+                        TOLL FREE : 1800 1800 6245
+                    </span>
+                </address>
+
+                <address class="mb-3">
+                    <span>JAIPUR, RAJASTHAN, INDIA 
+                        <br>
+                        CALL : +91 7088923613, +91 7546236578
+                        <br>
+                        TOLL FREE : 1800 1800 6245
+                    </span>
+                </address>
+            </div>
+
+            <div class="col-md-8 mt-4 mt-lg-0">
+                <h2 class="text-center text-light mb-3">FOLLOW US</h2>
+
+                <div class="d-flex justify-content-around align-items-center flex-column flex-lg-row">
+                    <i class="fa fa-facebook footer-icon mt-4 mt-lg-0"></i>
+                    <i class="fa fa-twitter footer-icon mt-4 mt-lg-0"></i>
+                    <i class="fa fa-google footer-icon mt-4 mt-lg-0"></i>
+                </div>
+
+                <h2 class="text-center mb-5 mt-5 text-white">OUR TEAM</h2>
+                <div class="d-flex justify-content-around align-items-center flex-column flex-lg-row">
+                    <img src="img/client01.jpg" alt="c" class="rounded-circle mt-4 mt-lg-0" width="150"> 
+                    <img src="img/client02.jpg" alt="c" class="rounded-circle mt-4 mt-lg-0" width="150"> 
+                    <img src="img/client01.jpg" alt="c" class="rounded-circle mt-4 mt-lg-0" width="150"> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer Coding -->
+
+    <script>
+        // Dynamic Navbar Toggler
+        $(document).ready(function() {
+            $("#nav-icon").click(function() {
+            $("#mobile-menu").collapse("toggle");
+            });
+        });
+    </script>
+</body>
+</html>

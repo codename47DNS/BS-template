@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="style/animate.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="script/jquery.js"></script>
+    <script src="script/popper.js"></script>
+    <script src="script/bootstrap.js"></script>
+</head>
+<body>
+    <!-- Nav Bar Coding -->
+    <nav class="navbar navbar-expand-md px-3 my-bg">
+        <a href="#" class="navbar-brand">BS PROJECT</a>
+        <i class="fa fa-bars bars-icon navbar-toggler" id="nav-icon"></i>
+        <div class="collapse navbar-collapse slider" style="transition: 0.5s;" id="mobile-menu"> 
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item me-5"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item me-5 dropdown"><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About us</a>
+                    <div class="dropdown-menu">
+                        <a href="about.html" class="dropdown-item text-dark">About Us</a>
+                    </div>
+                </li>
+                <li class="nav-item me-5"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-search" id="search-icon"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Nav Bar Coding -->
+
+    <!-- Slider Coding -->
+    <div class="container-fluid p-lg-5 py-2 pb-5 px-2 text-center my-bg text-white animated slideInDown">
+        <div class="collapse input-group position-absolute animated slideInLeft" id="search-box">
+            <input type="search" class="form-control" placeholder="Search">
+            <button class="btn btn-warning"><i class="fa fa-search"></i> Search</button>
+        </div>
+
+        <div class="carousel slide my-lg-0 my-3" data-bs-ride="carousel" id="header-slider">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#header-slider" class="active" data-bs-slide-to="0"></li>
+                <li data-bs-target="#header-slider" data-bs-slide-to="1"></li>
+                <li data-bs-target="#header-slider" data-bs-slide-to="2"></li>
+                <li data-bs-target="#header-slider" data-bs-slide-to="3"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item run active">
+                    <h1 class="add-header font-rt"></h1>
+                    <p class="add-desc mt-3 font-pt animated zoomIn slower">BECOME THE LEADER OF THE DESIGN</p>
+                    <button class="btn btn-danger my-2 px-lg-5 py-lg-3 me-lg-3 my-lg-5 animated zoomIn slower">START A JOURNEY</button>
+                    <button class="btn btn-light my-2 px-lg-5 py-lg-3 ms-lg-3 my-lg-5 animated zoomIn slower">VIEW ADVANTAGES</button>
+                </div>
+
+                <div class="carousel-item run">
+                    <h1 class="first-add-header font-rt animated flip slower">LOGO DESIGN</h1>
+                    <p class="add-desc mt-3 font-pt animated zoomIn slower">BECOME THE LEADER OF THE DESIGN</p>
+                    <button class="btn btn-danger my-2 px-lg-5 py-lg-3 me-lg-3 my-lg-5 animated zoomIn slower">START A JOURNEY</button>
+                    <button class="btn btn-light my-2 px-lg-5 py-lg-3 ms-lg-3 my-lg-5 animated zoomIn slower">VIEW ADVANTAGES</button>
+                </div>
+
+                <div class="carousel-item run">
+                    <h1 class="second-add-header font-rt animated slideInRight slower">HIRE US</h1>
+                    <p class="add-desc mt-3 font-pt animated zoomIn slower">BECOME THE LEADER OF THE DESIGN</p>
+                    <button class="btn btn-danger my-2 px-lg-5 py-lg-3 me-lg-3 my-lg-5 animated zoomIn slower">START A JOURNEY</button>
+                    <button class="btn btn-light my-2 px-lg-5 py-lg-3 ms-lg-3 my-lg-5 animated zoomIn slower">VIEW ADVANTAGES</button>
+                </div>
+
+                <div class="carousel-item run">
+                    <h1 class="third-add-header font-rt animated fadeIn slower">PREMIUM CLIENT</h1>
+                    <p class="add-desc mt-3 font-pt animated zoomIn slower">BECOME THE LEADER OF THE DESIGN</p>
+                    <button class="btn btn-danger my-2 px-lg-5 py-lg-3 me-lg-3 my-lg-5 animated zoomIn slower">START A JOURNEY</button>
+                    <button class="btn btn-light my-2 px-lg-5 py-lg-3 ms-lg-3 my-lg-5 animated zoomIn slower">VIEW ADVANTAGES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Slider Coding -->
+
+
+    <!-- Our Story Coding -->
+    <div class="container our-story">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="mt-5 mb-4 font-pt">OUR STORY</h2>
+                <ul class="nav nav-tabs border-0">
+                    <li class="nav-item"><a href="#overview" data-bs-toggle="tab" class="nav-link active">Overview</a></li>
+                    <li class="nav-item"><a href="#founder" data-bs-toggle="tab" class="nav-link">Founder</a></li>
+                    <li class="nav-item"><a href="#mission" data-bs-toggle="tab" class="nav-link">Mission</a></li>
+                </ul>
+
+                <div class="tab-content py-5">
+                    <div id="overview" class="tab-pane active animated slideInLeft">
+                        <div class="row flex-column flex-lg-row">
+                            <div class="col-lg-6">
+                                <img src="img/desktop.png" alt="desktop" width="100%" class="mb-5 mb-lg-0">
+                            </div>
+
+                            <div class="col-lg-6">
+                                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatem ad, 
+                                    doloremque obcaecati dolores impedit vel sequi a autem fugit repudiandae, 
+                                    atque reprehenderit. Inventore modi officia consectetur maxime, sunt ipsa.
+                                </h5>
+
+                                <p>Mollitia, dignissimos? Asperiores, ipsa voluptatem voluptates, voluptatum soluta 
+                                    omnis neque officiis explicabo quidem enim ducimus fugit sequi quasi dolorum 
+                                    quos atque cumque!Mollitia, dignissimos? Asperiores, ipsa voluptatem voluptates, 
+                                    voluptatum soluta 
+                                    omnis neque officiis explicabo quidem enim ducimus fugit sequi quasi dolorum 
+                                    quos atque cumque!Mollitia, dignissimos? Asperiores, ipsa voluptatem voluptates, 
+                                    voluptatum soluta 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="founder" class="tab-pane animated slideInRight">
+                        <div class="d-flex flex-column flex-lg-row">
+                            <div class="card p-2 my-bg" style="height:fit-content;">
+                                <div class="card-body">
+                                    <img src="img/founder.jpg" width="250" alt="Founder" class="img-thumbnail">
+                                </div>
+    
+                                <div class="card-footer text-center text-white">
+                                    <h5 class="text-center text-shadow">
+                                        Mr. Rudolf Hungry
+                                    </h5>
+    
+                                    <small style="text-shadow: 0.5px 0.5px 1.5px rgba(0, 0, 0, 0.212);">
+                                        Founder and CEO
+                                    </small>
+                                </div>
+                            </div>
+
+                            <div class="flex-fill px-4">
+                                <ul class="list-group">
+                                    <li class="list-group-item bg-primary text-light">BORN 
+                                        <i class="fa fa-calendar float-end"></i>
+                                    </li>
+
+                                    <li class="list-group-item mb-4">
+                                        <small>13 JULY 1980 (Age 41 Years), Madurai</small>
+                                    </li>
+
+                                    <li class="list-group-item bg-primary text-light">EDUCATION
+                                        <i class="fa fa-book float-end"></i>
+                                    </li>
+
+                                    <li class="list-group-item mb-4">
+                                        <small>Oxford University, (MBA)</small>
+                                    </li>
+
+                                    <li class="list-group-item bg-primary text-light">PROFILES
+                                        <i class="fa fa-external-link float-end"></i>
+                                    </li>
+
+                                    <li class="list-group-item mb-4">
+                                            <i class="fa fa-facebook"></i>
+                                            <i class="fa fa-twitter"></i>
+                                            <i class="fa fa-google"></i>
+                                    </li>
+
+                                    <li class="list-group-item bg-primary text-light">CONTACTS
+                                        <i class="fa fa-phone float-end"></i>
+                                    </li>
+
+                                    <li class="list-group-item mb-4">
+                                        <small>0141 4589135</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="mission" class="tab-pane  animated slideInLeft">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Our Story Coding -->
+
+    <!-- Services Coding -->
+    <div class="container-fluid p-sm-5 px-md-3 py-5 my-bg">
+        <div class="container-lg d-flex flex-column">
+            <h1 class="font-pt what-do text-white text-center">WHAT WE DO</h1>
+
+            <div class="row my-5">
+                <div class="col-md-3 p-lg-3">
+                    <div class="mb-3 d-flex"><i class="fa fa-home what-do-icon text-white me-1"></i> <span class="text-warning box-header ms-1">MARKETING</span></div>
+
+                    <div>
+                        <p class="hid-color">We provide a wide variety of marketing services and proper support included in our templates.This allows you to
+                            promote your products and services using Brave and itsa features.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 p-lg-3">
+                    <div class="mb-3 d-flex"><i class="fa fa-home what-do-icon text-white me-1"></i> <span class="text-warning box-header ms-1">MARKETING</span></div>
+
+                    <div>
+                        <p class="hid-color">We provide a wide variety of marketing services and proper support included in our templates.This allows you to
+                            promote your products and services using Brave and itsa features.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 p-lg-3">
+                    <div class="mb-3 d-flex"><i class="fa fa-home what-do-icon text-white me-1"></i> <span class="text-warning box-header ms-1">MARKETING</span></div>
+
+                    <div>
+                        <p class="hid-color">We provide a wide variety of marketing services and proper support included in our templates.This allows you to
+                            promote your products and services using Brave and itsa features.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 p-lg-3">
+                    <div class="mb-3 d-flex"><i class="fa fa-home what-do-icon text-white me-1"></i> <span class="text-warning box-header ms-1">MARKETING</span></div>
+
+                    <div>
+                        <p class="hid-color">We provide a wide variety of marketing services and proper support included in our templates.This allows you to
+                            promote your products and services using Brave and itsa features.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 p-lg-3">
+                    <div class="mb-3 d-flex"><i class="fa fa-home what-do-icon text-white me-1"></i> <span class="text-warning box-header ms-1">MARKETING</span></div>
+
+                    <div>
+                        <p class="hid-color">We provide a wide variety of marketing services and proper support included in our templates.This allows you to
+                            promote your products and services using Brave and itsa features.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 p-lg-3">
+                    <div class="mb-3 d-flex"><i class="fa fa-home what-do-icon text-white me-1"></i> <span class="text-warning box-header ms-1">MARKETING</span></div>
+
+                    <div>
+                        <p class="hid-color">We provide a wide variety of marketing services and proper support included in our templates.This allows you to
+                            promote your products and services using Brave and itsa features.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 p-lg-3">
+                    <div class="mb-3 d-flex"><i class="fa fa-home what-do-icon text-white me-1"></i> <span class="text-warning box-header ms-1">MARKETING</span></div>
+
+                    <div>
+                        <p class="hid-color">We provide a wide variety of marketing services and proper support included in our templates.This allows you to
+                            promote your products and services using Brave and itsa features.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 p-lg-3">
+                    <div class="mb-3 d-flex"><i class="fa fa-home what-do-icon text-white me-1"></i> <span class="text-warning box-header ms-1">MARKETING</span></div>
+
+                    <div>
+                        <p class="hid-color">We provide a wide variety of marketing services and proper support included in our templates.This allows you to
+                            promote your products and services using Brave and itsa features.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Services Coding -->
+
+
+    <!-- What People Says Coding -->
+    <div class="container-fluid p-sm-5 py-5 px-3" id="says">
+        <div class="row">
+            <div class="col-md-6 px-3 px-lg-5 wow mb-5 " id="people-say">
+                <h2 class="mb-5">WHAT PEOPLE SAY</h2>
+
+                <div class="d-flex shadow-lg" style="min-height: 300px;">
+                    <div style="background-color: white;" class="flex-fill">
+                        <div class="carousel slide" id="client-slider">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active px-4 py-3">
+                                    <div class="row">
+                                        <div class="col">
+                                            <img src="img/client01.jpg" alt="Client01" class="border rounded-circle shadow-sm client-img">
+                                        </div>
+
+                                        <div class="col-8 col-xxl-9 pt-3 pl-3">
+                                            <h5 class="mb-0">Georgia Victor</h5>
+                                            <small>Business</small>
+                                        </div>
+                                    </div>
+
+                                    <span style="line-height: 30px; color: #999;" class="mt-3 d-block">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus est,
+                                        exercitationem expedita quam provident autem quae eligendi eius 
+                                        quasi, repellendus quaerat iusto maxime voluptatem nam similique
+                                        dolore? Nulla, quibusdam id.
+                                    </span>
+                                </div>
+
+                                <div class="carousel-item px-4 py-3">
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-5">
+                                            <img src="img/client02.jpg" alt="Client01" class="border rounded-circle shadow-sm client-img">
+                                        </div>
+
+                                        <div class="col-md-9 col-sm-7 pt-3 pl-3">
+                                            <h5 class="mb-0">Selena Lovato</h5>
+                                            <small>Business</small>
+                                        </div>
+                                    </div>
+
+                                    <span style="line-height: 30px; color: #999;" class="mt-3 d-block">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus est,
+                                        exercitationem expedita quam provident autem quae eligendi eius 
+                                        quasi, repellendus quaerat iusto maxime voluptatem nam similique
+                                        dolore? Nulla, quibusdam id.
+                                    </span>
+                                </div>
+
+                                <div class="carousel-item px-4 py-3">
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-5">
+                                            <img src="img/client01.jpg" alt="Client01" class="border rounded-circle shadow-sm client-img">
+                                        </div>
+
+                                        <div class="col-md-9 col-sm-7 pt-3 pl-3">
+                                            <h5 class="mb-0">Georgia Victor</h5>
+                                            <small>Business</small>
+                                        </div>
+                                    </div>
+
+                                    <span style="line-height: 30px; color: #999;" class="mt-3 d-block">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus est,
+                                        exercitationem expedita quam provident autem quae eligendi eius 
+                                        quasi, repellendus quaerat iusto maxime voluptatem nam similique
+                                        dolore? Nulla, quibusdam id.
+                                    </span>
+                                </div>
+
+                                <div class="carousel-item px-4 py-3">
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-5">
+                                            <img src="img/client02.jpg" alt="Client01" class="border rounded-circle shadow-sm client-img">
+                                        </div>
+
+                                        <div class="col-md-9 col-sm-7 pt-3 pl-3">
+                                            <h5 class="mb-0">Selena Lovato</h5>
+                                            <small>Business</small>
+                                        </div>
+                                    </div>
+
+                                    <span style="line-height: 30px; color: #999;" class="mt-3 d-block">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus est,
+                                        exercitationem expedita quam provident autem quae eligendi eius 
+                                        quasi, repellendus quaerat iusto maxime voluptatem nam similique
+                                        dolore? Nulla, quibusdam id.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background-color: #ED1C94;" class="d-flex flex-column justify-content-between py-2 px-3">
+                        <i class="fa fa-arrow-circle-right text-white" style="font-size: 35px;" id="next-client"></i>
+                        <i class="fa fa-arrow-circle-left text-white" style="font-size: 35px;" id="prev-client"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 text-center d-flex flex-column justify-content-around">
+                <div class="text-white d-flex justify-content-around">
+                    <div>
+                        <i class="fa fa-code" style="font-size: 35px;"></i>
+                        <h4 class="mt-3 mb-2" id="num-1">500+</h4>
+                        <p>Web Project</p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-tv" style="font-size: 35px;"></i>
+                        <h4 class="mt-3 mb-2" id="num-2">700+</h4>
+                        <p>Logo Design</p>
+                    </div>
+                </div>
+
+                <div class="text-white d-flex justify-content-around">
+                    <div>
+                        <i class="fa fa-android" style="font-size: 35px;"></i>
+                        <h4 class="mt-3 mb-2" id="num-3">450+</h4>
+                        <p>App Design</p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-paperclip" style="font-size: 35px;"></i>
+                        <h4 class="mt-3 mb-2" id="num-4">100+</h4>
+                        <p>Clip Art</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End What People Says Coding -->
+
+    <div class="container-fluid p-5" style="box-sizing: border-box;">
+        <h2 class="mb-5">STUDY WITH US</h2>
+
+        <div class="d-flex study-us justify-content-between flex-column flex-lg-row">
+            <div class="card mb-5">
+                <img src="img/t-a.jpg" alt="a" width="100%" height="100%">
+
+                <div class="btn-box">
+                    <div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Blanditiis accusantium nisi explicabo maxime accusamus</span> <br>
+                        <button class="btn btn-warning mt-3"> Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-5">
+                <img src="img/t-b.jpg" alt="a" width="100%" height="100%">
+
+                <div class="btn-box">
+                    <div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Blanditiis accusantium nisi explicabo maxime accusamus</span> <br>
+                        <button class="btn btn-warning mt-3"> Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-5">
+                <img src="img/t-c.jpg" alt="a" width="100%" height="100%">
+
+                <div class="btn-box">
+                    <div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Blanditiis accusantium nisi explicabo maxime accusamus</span> <br>
+                        <button class="btn btn-warning mt-3"> Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-5">
+                <img src="img/t-d.jpg" alt="a" width="100%" height="100%">
+
+                <div class="btn-box">
+                    <div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Blanditiis accusantium nisi explicabo maxime accusamus</span> <br>
+                        <button class="btn btn-warning mt-3"> Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-bg p-5">
+        <div class="row">
+            <div class="col-md-4 text-white">
+                <h2 class="mb-3 text-white">GET IN TOUCH</h2>
+
+                <div class="input-group mb-5">
+                    <input type="email" placeholder="Email Id" name="email" class="form-control">
+
+                    <button class="btn btn-warning text-white">SUBSCRIBE</button>
+                </div>
+
+                <h2><i class="fa fa-map-marker"></i> ADDRESS</h2>
+
+                <address class="mb-5">
+                    <span>JAIPUR, RAJASTHAN, INDIA 
+                        <br>
+                        CALL : +91 7088923613, +91 7546236578
+                        <br>
+                        TOLL FREE : 1800 1800 6245
+                    </span>
+                </address>
+
+                <address class="mb-3">
+                    <span>JAIPUR, RAJASTHAN, INDIA 
+                        <br>
+                        CALL : +91 7088923613, +91 7546236578
+                        <br>
+                        TOLL FREE : 1800 1800 6245
+                    </span>
+                </address>
+            </div>
+
+            <div class="col-md-8 mt-4 mt-lg-0">
+                <h2 class="text-center text-light mb-3">FOLLOW US</h2>
+
+                <div class="d-flex justify-content-around align-items-center flex-column flex-lg-row">
+                    <i class="fa fa-facebook footer-icon mt-4 mt-lg-0"></i>
+                    <i class="fa fa-twitter footer-icon mt-4 mt-lg-0"></i>
+                    <i class="fa fa-google footer-icon mt-4 mt-lg-0"></i>
+                </div>
+
+                <h2 class="text-center mb-5 mt-5 text-white">OUR TEAM</h2>
+                <div class="d-flex justify-content-around align-items-center flex-column flex-lg-row">
+                    <img src="img/client01.jpg" alt="c" class="rounded-circle mt-4 mt-lg-0" width="150"> 
+                    <img src="img/client02.jpg" alt="c" class="rounded-circle mt-4 mt-lg-0" width="150"> 
+                    <img src="img/client01.jpg" alt="c" class="rounded-circle mt-4 mt-lg-0" width="150"> 
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script/wow.min.js"></script>
+    <script src="script/script.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>
